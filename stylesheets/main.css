@@ -1,0 +1,73 @@
+body {
+  background-color: #c6d9f1;
+  margin: 0px 50px;
+}
+
+#main {
+/*  background-image: url(../images/globe.png); */
+}
+
+img[src="images/africa.png"] {
+  width: 206px;
+  height: 467px;
+  float: left;
+}
+
+/* extract into vaccine.css */
+img[src="images/divaf.png"] {
+ width: 470px;
+ height: 89;
+ float: right;
+ margin-top: 50px;
+}
+
+/* extract into index.css */
+img[src="images/hospital.gif"] {
+  width: 299px;
+  height: 224px;
+  float: right;
+}
+
+#header {
+  overflow: auto;
+}
+
+#header p {
+  margin-left: 20%;
+  text-align: center;
+}
+
+#main {
+  margin-top: -300px;
+}
+
+#main > div {
+  border: 2px solid gray;
+}
+
+h3 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font: normal normal bold 12px Helvetica, Arial, sans-serif;
+}
+
+h3:after {
+  content: ":";
+}
+
+#technicalDesign {
+  margin-left: 80%;
+}
+
+/* index */
+#mission, #objectives {
+  margin-left: 210px;
+}
+
+li:after {
+  content: ";"
+}
+
+li:last-child:after {
+  content: "."
+}
