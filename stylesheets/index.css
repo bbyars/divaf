@@ -28,14 +28,14 @@ li:last-child:after {
   text-align: center;
 }
 
-img[src="images/hospital.gif"] {
+img[src="images/hospital.jpg"] {
   width: 299px;
   height: 224px;
   float: right;
   margin-top: -100px;
 }
 
-img[src="images/tents.gif"] {
+img[src="images/tents.jpg"] {
   width: 372px;
   height: 279px;
   float: right;
