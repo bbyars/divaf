@@ -8,6 +8,19 @@ em {
   font-weight: bold;
 }
 
+h2, h3 {
+  text-transform: uppercase;
+  font: normal normal bold 12px Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+h2:after {
+  content: ":";
+}
+
 #main {
   background-image: url(../images/globe.png);
   background-repeat: repeat-y;
@@ -38,16 +51,6 @@ img[src="images/africa.png"] {
   border: 2px solid gray;
 }
 
-h3 {
-  text-decoration: underline;
-  text-transform: uppercase;
-  font: normal normal bold 12px Helvetica, Arial, sans-serif;
-}
-
-h3:after {
-  content: ":";
-}
-
 /* vaccine */
 img[src="images/divaf-sundanzer.png"] {
  width: 470px;
@@ -70,6 +73,19 @@ img[src="images/ruralHealth.gif"] {
   margin-top: 100px;
 }
 
+img[src="images/solarPanel.gif"] {
+  width: 148px;
+  height: 177px;
+  float: right;
+}
+
+img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="images/redundancy.png"] {
+  width: 467px;
+  height: 102px;
+  float: right;
+  margin-right: 20%;
+}
+
 #technicalDesign {
   margin: 0 0 20px 60%;
   text-align: justify;
@@ -80,7 +96,7 @@ img[src="images/ruralHealth.gif"] {
   text-align: justify;
 }
 
-#environmentalDesign h3 {
+#environmentalDesign h2 {
   text-align: right;
 }
 
@@ -96,6 +112,10 @@ img[src="images/ruralHealth.gif"] {
   float: left;
 }
 
+#conformanceStandards {
+  clear: left;
+}
+
 /* index */
 #mission, #objectives {
   margin: 20px 0px 0px 210px;
@@ -109,7 +129,7 @@ img[src="images/ruralHealth.gif"] {
   font-weight: bold;
 }
 
-#divaf h3 {
+#divaf h2 {
   text-align: center;
 }
 
@@ -142,4 +162,11 @@ img[src="images/tents.gif"] {
 
 .surname {
   text-transform: uppercase;
+}
+
+.mainPoint {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 150%;
 }
