@@ -4,7 +4,10 @@ body {
 }
 
 #main {
-/*  background-image: url(../images/globe.png); */
+  background-image: url(../images/globe.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
 }
 
 img[src="images/africa.png"] {
