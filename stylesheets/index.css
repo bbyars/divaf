@@ -1,0 +1,46 @@
+li:after {
+  content: ";"
+}
+
+li:last-child:after {
+  content: "."
+}
+
+#mission, #objectives {
+  margin: 20px 0px 0px 210px;
+}
+
+#divaf, #board {
+  width: 66%;
+}
+
+#divaf li {
+  font-weight: bold;
+}
+
+#divaf h2 {
+  text-align: center;
+}
+
+img[src="images/hospital.gif"] {
+  width: 299px;
+  height: 224px;
+  float: right;
+  margin-top: -100px;
+}
+
+img[src="images/tents.gif"] {
+  width: 372px;
+  height: 279px;
+  float: right;
+  margin-right: 50px;
+}
+
+#board li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.surname {
+  text-transform: uppercase;
+}
