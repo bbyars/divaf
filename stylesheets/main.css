@@ -1,6 +1,8 @@
 body {
   background-color: #c6d9f1;
   margin: 0% 10%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
 
 em {
@@ -23,7 +25,7 @@ h2:after {
 
 #main {
   background-image: url(../images/globe.png);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-position: top;
   background-attachment: scroll;
 }
@@ -46,80 +48,8 @@ img[src="images/africa.png"] {
 #main {
   margin-top: -300px;
 }
-
+/*
 #main > div {
   border: 2px solid gray;
 }
-
-/* vaccine */
-img[src="images/divaf-sundanzer.png"] {
- width: 470px;
- height: 89;
- float: right;
- margin-top: 50px;
-}
-
-img[src="images/doctor.gif"] {
-  width: 225px;
-  height: 168px;
-  float: left;
-  margin-left: 30px;
-}
-
-img[src="images/ruralHealth.gif"] {
-  width: 253px;
-  height: 189px;
-  float: right;
-  margin-top: 100px;
-}
-
-img[src="images/solarPanel.gif"] {
-  width: 148px;
-  height: 177px;
-  float: right;
-}
-
-img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="images/redundancy.png"] {
-  width: 467px;
-  height: 102px;
-  float: right;
-  margin-right: 20%;
-}
-
-#technicalDesign {
-  margin: 0 0 20px 60%;
-  text-align: justify;
-}
-
-#environmentalDesign {
-  margin-left: 40%;
-  text-align: justify;
-}
-
-#environmentalDesign h2 {
-  text-align: right;
-}
-
-#solution {
-  margin-left: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#details {
-  width: 50%;
-  float: left;
-}
-
-#conformanceStandards {
-  clear: left;
-}
-
-
-.mainPoint {
-  color: red;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 150%;
-}
+*/

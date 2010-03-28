@@ -1,3 +1,7 @@
+li {
+  text-transform: uppercase;
+}
+
 img[src="images/divaf-sundanzer.png"] {
  width: 470px;
  height: 89;
@@ -23,6 +27,7 @@ img[src="images/solarPanel.gif"] {
   width: 148px;
   height: 177px;
   float: right;
+  margin-top: -50px;
 }
 
 img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="images/redundancy.png"] {
@@ -51,6 +56,7 @@ img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="i
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 150%;
 }
 
 #details {
@@ -60,6 +66,28 @@ img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="i
 
 #conformanceStandards {
   clear: left;
+  width: 50%;
+}
+
+#storageUnit {
+  width: 30%;
+  float: right;
+  margin-top: -50px;
+  text-align: center;
+}
+
+#designPartners {
+  margin-top: 50px;
+  width: 30%;
+  float: left;
+}
+
+#banners {
+  float: right;
+  width: auto;
+  margin-top: -50px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .mainPoint {
