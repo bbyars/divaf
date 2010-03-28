@@ -1,6 +1,6 @@
 body {
   background-color: #c6d9f1;
-  margin: 0% 10%;
+  margin: 0% 5%;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
@@ -23,6 +23,31 @@ h2:after {
   content: ":";
 }
 
+#header {
+  overflow: auto;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 250px;
+  border: 2px solid gray;
+}
+
+#menu li {
+  display: inline;
+  text-transform: none;
+}
+
+#menu li:after {
+  content: " | "
+}
+
+#menu li:last-child:after {
+  content: ""
+}
+
 #main {
   background-image: url(../images/globe.png);
   background-repeat: no-repeat;
@@ -36,15 +61,7 @@ img[src="images/africa.png"] {
   float: left;
 }
 
-#header {
-  overflow: auto;
-}
-
-#header p {
-  margin-left: 20%;
-  text-align: center;
-}
-
+/* really? */
 #main {
   margin-top: -300px;
 }

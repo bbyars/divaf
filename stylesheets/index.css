@@ -6,6 +6,12 @@ li:last-child:after {
   content: "."
 }
 
+#overview {
+  margin-left: 20%;
+  margin-top: -100px;
+  text-align: center;
+}
+
 #mission, #objectives {
   margin: 20px 0px 0px 210px;
 }
