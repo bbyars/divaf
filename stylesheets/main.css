@@ -21,13 +21,6 @@ img[src="images/divaf.png"] {
  margin-top: 50px;
 }
 
-/* extract into index.css */
-img[src="images/hospital.gif"] {
-  width: 299px;
-  height: 224px;
-  float: right;
-}
-
 #header {
   overflow: auto;
 }
@@ -61,7 +54,19 @@ h3:after {
 
 /* index */
 #mission, #objectives {
-  margin-left: 210px;
+  margin: 20px 0px 0px 210px;
+}
+
+#divaf, #board {
+  width: 66%;
+}
+
+#divaf li {
+  font-weight: bold;
+}
+
+#divaf h3 {
+  text-align: center;
 }
 
 li:after {
@@ -70,4 +75,27 @@ li:after {
 
 li:last-child:after {
   content: "."
+}
+
+img[src="images/hospital.gif"] {
+  width: 299px;
+  height: 224px;
+  float: right;
+  margin-top: -100px;
+}
+
+img[src="images/tents.gif"] {
+  width: 372px;
+  height: 279px;
+  float: right;
+  margin-right: 50px;
+}
+
+#board li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.surname {
+  text-transform: uppercase;
 }
