@@ -24,10 +24,6 @@ h2:after {
   content: ":";
 }
 
-#header {
-  overflow: auto;
-}
-
 #menu {
   list-style: none;
   padding: 0;
@@ -57,8 +53,6 @@ img[src="images/africa.png"] {
   float: left;
 }
 
-/*
 div {
-  border: 2px solid gray;
+  border: 2px solid transparent;
 }
-*/
