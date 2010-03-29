@@ -72,10 +72,6 @@ img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="i
   font-weight: bold;
 }
 
-#storageUnit h2 {
-  text-align: left;
-}
-
 #banners {
   float: right;
   width: auto;
