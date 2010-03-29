@@ -24,6 +24,14 @@ h2:after {
   content: ":";
 }
 
+div {
+  border: 2px solid transparent;
+}
+
+img[src="images/africa.png"] {
+  float: left;
+}
+
 #menu {
   list-style: none;
   padding: 0;
@@ -47,12 +55,4 @@ h2:after {
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: scroll;
-}
-
-img[src="images/africa.png"] {
-  float: left;
-}
-
-div {
-  border: 2px solid transparent;
 }
