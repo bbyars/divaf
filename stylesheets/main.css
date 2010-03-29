@@ -30,14 +30,11 @@ h2:after {
 #menu {
   list-style: none;
   padding: 0;
-  margin-top: 50px;
-  margin-left: 250px;
-  border: 2px solid gray;
+  margin: 2em 0 3em 200px;
 }
 
 #menu li {
   display: inline;
-  text-transform: none;
 }
 
 #menu li:after {
@@ -56,17 +53,9 @@ h2:after {
 }
 
 img[src="images/africa.png"] {
-  width: 206px;
-  height: 467px;
   float: left;
 }
 
-/* really? */
-#main {
-  margin-top: -300px;
-}
-/*
-#main > div {
+div {
   border: 2px solid gray;
 }
-*/

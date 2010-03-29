@@ -1,45 +1,13 @@
-li:after {
+#focus li:after, #divaf li:after, #board li:after {
   content: ";"
 }
 
-li:last-child:after {
+#focus li:last-child:after, #divaf li:last-child:after, #board li:last-child:after {
   content: "."
-}
-
-#overview {
-  margin-left: 20%;
-  margin-top: -100px;
-  text-align: center;
-}
-
-#mission, #objectives {
-  margin: 20px 0px 0px 210px;
-}
-
-#divaf, #board {
-  width: 66%;
 }
 
 #divaf li {
   font-weight: bold;
-}
-
-#divaf h2 {
-  text-align: center;
-}
-
-img[src="images/hospital.jpg"] {
-  width: 299px;
-  height: 224px;
-  float: right;
-  margin-top: -100px;
-}
-
-img[src="images/tents.jpg"] {
-  width: 372px;
-  height: 279px;
-  float: right;
-  margin-right: 50px;
 }
 
 #board li {
@@ -47,6 +15,32 @@ img[src="images/tents.jpg"] {
   margin-bottom: 10px;
 }
 
+#overview {
+  margin-left: 220px;
+  text-align: center;
+}
+
+#mission, #objectives {
+  margin: 20px 0px 0px 210px;
+}
+
+#focus, #divaf, #board {
+  width: 66%;
+}
+
+#focus {
+  clear: left;
+}
+
 .surname {
   text-transform: uppercase;
+}
+
+img[src="images/hospital.jpg"] {
+  float: right;
+}
+
+img[src="images/tents.jpg"] {
+  float: right;
+  margin-top: -100px;
 }
