@@ -24,11 +24,7 @@ h2:after {
   content: ":";
 }
 
-div {
-  border: 2px solid transparent;
-}
-
-img[src="images/africa.png"] {
+#logo {
   float: left;
 }
 
@@ -40,14 +36,12 @@ img[src="images/africa.png"] {
 
 #menu li {
   display: inline;
+  border-right: 2px solid gray;
+  padding: 0 5px;
 }
 
-#menu li:after {
-  content: " | "
-}
-
-#menu li:last-child:after {
-  content: ""
+#menu li:first-child {
+  border-left: 1px solid black;
 }
 
 #main {
@@ -55,4 +49,5 @@ img[src="images/africa.png"] {
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: scroll;
+  min-height: 800px;
 }

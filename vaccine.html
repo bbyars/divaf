@@ -5,9 +5,15 @@
 
     <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/vaccine.css" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+      <link href="stylesheets/ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lt IE 7]>
+      <script src="javascripts/ie7/ie9.js">IE7_PNG_SUFFIX=".png";</script>
+    <![endif]-->
   </head>
   <body>
-    <img src="images/africa.png" alt="Divaf" width="206" height="470" />
+    <img src="images/africa.png" alt="Divaf" width="206" height="470" id="logo" />
 
     <div id="menu">
       <ul>
@@ -41,7 +47,29 @@
         <p>The solution must fit seamlessly into the existing environment without depending on a change in environmental factors</p>
       </div>
 
-      <img src="images/ruralHealth.jpg" alt="Africa Health" width="253" height="189" />
+      <div id="sidebar">
+        <div id="conformanceStandards"><div>
+          <h3>Conformance Standards</h3>
+          <ul>
+            <li>WHO/PQS/E03/RF05.1</li>
+            <li>Solar Direct Drive Without Battery Storage</li>
+          </ul>
+        </div></div>
+
+        <div id="designPartners">
+          <h3>Design Partners</h3>
+          <ul>
+            <li>Sundanzer Development Group</li>
+            <li>PATH</li>
+            <li>DIVAF<br />Lagos, Nigeria</li>
+          </ul>
+        </div>
+
+        <div id="storageUnit">
+          <h2>STR-50 Vaccine Storage Unit</h2>
+          <p><em>Direct Drive Photovoltaic</em><br />and/or<br />AC grid or generator power through rectifier<br />and/or<br />other 12 V DC power source</p>
+        </div>
+      </div>
 
       <div id="details">
         <p>Internal temperature distribution for maintenance of vaccines is critical to maintain the effectiveness of the active agent, the proteins or amino acid chains.  These chains are structured in a curled configuration during vaccine preparation at the lab.  <em>This structure is crucial to their effectiveness.</em></p>
@@ -51,30 +79,8 @@
         <p class="mainPoint">Vaccines must be stored at a securely defined temperature range no cooler than 2&deg;C, and no warmer than 8&deg;C.
       </div>
 
-      <div id="conformanceStandards">
-        <h3>Conformance Standards</h3>
-        <ul>
-          <li>WHO/PQS/E03/RF05.1</li>
-          <li>Solar Direct Drive Without Battery Storage</li>
-        </ul>
-      </div>
-
+      <img src="images/ruralHealth.jpg" alt="Africa Health" width="253" height="189" />
       <img src="images/sdzronriver.jpg" alt="Sundanzer Refrigeration" width="148" height="177" />
-
-      <div id="storageUnit">
-        <h2>STR-50 Vaccine Storage Unit</h2>
-        <p><em>Direct Drive Photovoltaic</em><br />and/or<br />AC grid or generator power through rectifier<br />and/or<br />other 12 V DC power source</p>
-      </div>
-
-      <div id="designPartners">
-        <h3>Design Partners</h3>
-        <ul>
-          <li>Sundanzer Development Group</li>
-          <li>PATH</li>
-          <li>DIVAF<br />Lagos, Nigeria</li>
-        </ul>
-      </div>
-
       <img src="images/adaptability.png" alt="Adaptability" width="467" height="103" />
       <img src="images/simplicity.png" alt="Simplicity" width="467" height="103" />
       <img src="images/redundancy.png" alt="Redundancy" width="467" height="102" />
