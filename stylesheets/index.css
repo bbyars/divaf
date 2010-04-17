@@ -50,10 +50,16 @@ body.enhanced #mission, body.enhanced #objectives {
 body.enhanced #hospital {
   display: block;
   float: right;
+  width: 299px;
+  height: 224px;
+  background-image: url(../images/hospital.jpg);
 }
 
 body.enhanced #tents {
   display: block;
   float: right;
   margin-top: -100px;
+  width: 372px;
+  height: 279px;
+  background-image: url(../images/tents.jpg);
 }
