@@ -5,25 +5,16 @@
 body.enhanced #divaf-sundanzer {
  display: block;
  margin-bottom: 35px;
+ margin-left: 210px;
+ width: 530px;
+ height: 94px;
+ background-image: url(../images/divaf-sundanzer.png);
 }
 
-#nurse {
-  display: none;
-}
-
-body.enhanced #nurse {
-  display: block;
+img[src="images/nurse.jpg"] {
   float: left;
   clear: left;
   margin-left: 30px;
-}
-
-#pictures {
-  display: none;
-}
-
-body.enhanced #pictures {
-  display: block;
 }
 
 img[src="images/ruralHealth.jpg"] {
@@ -49,7 +40,6 @@ img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="i
   margin-right: 20%;
 }
 
-#technicalDesign {
   margin: 0 0 20px 0;
   text-align: justify;
 }
@@ -92,14 +82,6 @@ body.enhanced #technicalDesign, body.enhanced #environmentalDesign, body.enhance
   float: left;
 }
 
-/*
-#banners {
-  float: right;
-  width: auto;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-*/
 #banners {
   display: none;
 }
