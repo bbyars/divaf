@@ -2,7 +2,7 @@
   display: none;
 }
 
-body.enhanced #divaf-sundanzer {
+html.enhanced #divaf-sundanzer {
  display: block;
  margin-bottom: 35px;
  margin-left: 210px;
@@ -31,7 +31,7 @@ img[src="images/sdzronriver.jpg"] {
   display: none;
 }
 
-body.enhanced #banners {
+html.enhanced #banners {
   display: block;
 }
 
@@ -57,7 +57,7 @@ img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="i
   line-height: 150%;
 }
 
-body.enhanced #technicalDesign, body.enhanced #environmentalDesign, body.enhanced #solution {
+html.enhanced #technicalDesign, html.enhanced #environmentalDesign, html.enhanced #solution {
   margin-left: 40%;
 }
 
@@ -86,7 +86,7 @@ body.enhanced #technicalDesign, body.enhanced #environmentalDesign, body.enhance
   display: none;
 }
 
-body.enhanced #banners {
+html.enhanced #banners {
   display: block;
 }
 

@@ -5,7 +5,7 @@ body {
   font-size: 12px;
 }
 
-body.enhanced {
+html.enhanced {
   min-width: 880px;
 }
 
@@ -31,7 +31,7 @@ h2:after {
   display: none;
 }
 
-body.enhanced #logo {
+html.enhanced #logo {
   display: block;
   float: left;
   width: 206px;
@@ -45,7 +45,7 @@ body.enhanced #logo {
   margin: 2em 0 3em 0;
 }
 
-body.enhanced #menu {
+html.enhanced #menu {
   margin-left: 200px;
 }
 
@@ -59,10 +59,16 @@ body.enhanced #menu {
   border-left: 1px solid black;
 }
 
-body.enhanced #main {
+html.enhanced #main {
   background-image: url(../images/globe.gif);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: scroll;
   min-height: 800px;
+}
+
+a.enhanced_toggleResult {
+  display: block;
+  clear: both;
+  float: right;
 }

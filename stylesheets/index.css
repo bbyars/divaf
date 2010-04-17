@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-body.enhanced #overview {
+html.enhanced #overview {
   margin-left: 220px;
 }
 
@@ -27,7 +27,7 @@ body.enhanced #overview {
   margin: 20px 0 0 0;
 }
 
-body.enhanced #mission, body.enhanced #objectives {
+html.enhanced #mission, html.enhanced #objectives {
   margin-left: 210px;
 }
 
@@ -47,7 +47,7 @@ body.enhanced #mission, body.enhanced #objectives {
   display: none;
 }
 
-body.enhanced #hospital {
+html.enhanced #hospital {
   display: block;
   float: right;
   width: 299px;
@@ -55,7 +55,7 @@ body.enhanced #hospital {
   background-image: url(../images/hospital.jpg);
 }
 
-body.enhanced #tents {
+html.enhanced #tents {
   display: block;
   float: right;
   margin-top: -100px;
