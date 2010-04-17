@@ -1,11 +1,29 @@
-img[src="images/divaf-sundanzer.png"] {
+#divaf-sundanzer {
+  display: none;
+}
+
+body.enhanced #divaf-sundanzer {
+ display: block;
  margin-bottom: 35px;
 }
 
-img[src="images/nurse.jpg"] {
+#nurse {
+  display: none;
+}
+
+body.enhanced #nurse {
+  display: block;
   float: left;
   clear: left;
   margin-left: 30px;
+}
+
+#pictures {
+  display: none;
+}
+
+body.enhanced #pictures {
+  display: block;
 }
 
 img[src="images/ruralHealth.jpg"] {
@@ -18,27 +36,39 @@ img[src="images/sdzronriver.jpg"] {
   float: left; /* IE7 */
 }
 
+#banners {
+  display: none;
+}
+
+body.enhanced #banners {
+  display: block;
+}
+
 img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="images/redundancy.png"] {
   float: right;
   margin-right: 20%;
 }
 
 #technicalDesign {
-  margin: 0 0 20px 40%;
+  margin: 0 0 20px 0;
   text-align: justify;
 }
 
 #environmentalDesign {
-  margin: 0 0 20px 40%;
+  margin: 0 0 20px 0;
   text-align: justify;
 }
 
 #solution {
-  margin: 5em 0 5em 40%;
+  margin: 5em 0 5em 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 150%;
+}
+
+body.enhanced #technicalDesign, body.enhanced #environmentalDesign, body.enhanced #solution {
+  margin-left: 40%;
 }
 
 #sidebar {
@@ -62,11 +92,20 @@ img[src="images/adaptability.png"], img[src="images/simplicity.png"], img[src="i
   float: left;
 }
 
+/*
 #banners {
   float: right;
   width: auto;
   margin-left: 20%;
   margin-right: 20%;
+}
+*/
+#banners {
+  display: none;
+}
+
+body.enhanced #banners {
+  display: block;
 }
 
 .mainPoint {

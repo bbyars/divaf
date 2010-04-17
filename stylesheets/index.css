@@ -16,12 +16,19 @@
 }
 
 #overview {
-  margin-left: 220px;
   text-align: center;
 }
 
+body.enhanced #overview {
+  margin-left: 220px;
+}
+
 #mission, #objectives {
-  margin: 20px 0px 0px 210px;
+  margin: 20px 0 0 0;
+}
+
+body.enhanced #mission, body.enhanced #objectives {
+  margin-left: 210px;
 }
 
 #focus, #divaf, #board {
@@ -36,11 +43,17 @@
   text-transform: uppercase;
 }
 
-img[src="images/hospital.jpg"] {
+#hospital, #tents {
+  display: none;
+}
+
+body.enhanced #hospital {
+  display: block;
   float: right;
 }
 
-img[src="images/tents.jpg"] {
+body.enhanced #tents {
+  display: block;
   float: right;
   margin-top: -100px;
 }
