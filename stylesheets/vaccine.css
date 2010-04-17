@@ -88,6 +88,11 @@ html.enhanced #technicalDesign, html.enhanced #environmentalDesign, html.enhance
 
 html.enhanced #banners {
   display: block;
+  width: 470px;
+  height: 266px;
+  background-image: url(../images/banners.png);
+  float: right;
+  margin-right: 20%;
 }
 
 .mainPoint {

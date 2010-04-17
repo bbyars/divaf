@@ -1,3 +1,7 @@
+/* Prevent Flash of Unstyled Content: http://code.google.com/p/enhancejs/wiki/IntegrationTips */
+html.enhanced body { visibility: hidden; }
+html.enhanced-incomplete body { visibility: visible; }
+
 body {
   background-color: #c6d9f1;
   margin: 0% 5%;
@@ -72,3 +76,6 @@ a.enhanced_toggleResult {
   clear: both;
   float: right;
 }
+
+html.enhanced body { visibility: visible; }
+
