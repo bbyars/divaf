@@ -34,6 +34,9 @@ h2:after {
 body.enhanced #logo {
   display: block;
   float: left;
+  width: 206px;
+  height: 470px;
+  background-image: url(../images/africa.png);
 }
 
 #menu {
