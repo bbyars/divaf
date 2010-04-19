@@ -8,10 +8,28 @@
 
     <script type="text/javascript" src="javascripts/enhance-1.0a.min.js"></script>
     <script type="text/javascript">
+      function hasCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for (var i=0;i < ca.length;i++) {
+              var c = ca[i];
+              while (c.charAt(0)==' ') c = c.substring(1,c.length);
+              if (c.indexOf(nameEQ) == 0) return true;
+            }
+          return false;
+      }
+
+      var firstHit = !hasCookie("enhanced");
+
       enhance({
         forceFailText: "View trimmed down version (loads faster)",
         forcePassText: "View enhanced website (may be slower to load)"
       });
+
+      if (firstHit) {
+        // always default to low-fi version
+        enhance.forceFail();
+      }
     </script>
 
     <!--[if lt IE 8]>
