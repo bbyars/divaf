@@ -1,7 +1,3 @@
-/* Prevent Flash of Unstyled Content: http://code.google.com/p/enhancejs/wiki/IntegrationTips */
-html.enhanced body { visibility: hidden; }
-html.enhanced-incomplete body { visibility: visible; }
-
 body {
   background-color: #c6d9f1;
   margin: 0% 5%;
@@ -46,7 +42,7 @@ html.enhanced #logo {
 #menu {
   list-style: none;
   padding: 0;
-  margin: 2em 0 3em 0;
+  margin: 3em 0 3em 0;
 }
 
 html.enhanced #menu {
@@ -73,9 +69,8 @@ html.enhanced #main {
 
 a.enhanced_toggleResult {
   display: block;
-  clear: both;
-  float: right;
+  position: absolute;
+  top: 10px;
+  left: 5%;
 }
-
-html.enhanced body { visibility: visible; }
 
