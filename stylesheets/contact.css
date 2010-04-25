@@ -1,0 +1,44 @@
+dl {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+dt {
+  padding-top: 2em;
+}
+
+dd {
+  margin-left: 2em;
+  display: block;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+#overview {
+  margin-left: 250px;
+}
+
+#main dl {
+  margin-left: 25%;
+}
+
+#pdc span.companyName {
+  color: gray;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 1em;
+}
+
+dd.company {
+  margin-top: 2em;
+}
+
+dd.company a[rel="website"] {
+  margin-left: 1em;
+}
+
+dd.company a[rel="email"] {
+  display: block;
+}
