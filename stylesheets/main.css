@@ -5,7 +5,7 @@ body {
   font-size: 12px;
 }
 
-html.enhanced {
+html.enhanced body {
   min-width: 880px;
 }
 
@@ -25,6 +25,12 @@ h2 {
 
 h2:after {
   content: ":";
+}
+
+#enhancementToggle {
+  position: absolute;
+  top: 5px;
+  left: 5%;
 }
 
 #logo {
@@ -65,12 +71,5 @@ html.enhanced #main {
   background-position: top;
   background-attachment: scroll;
   min-height: 800px;
-}
-
-a.enhanced_toggleResult {
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 5%;
 }
 
