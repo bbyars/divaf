@@ -34,12 +34,13 @@ h2:after {
 }
 
 #logo {
-  display: none;
+  float: left;
+  width: 204px;
+  height: 225px;
+  background-image: url(../images/divaf_small.png);
 }
 
 html.enhanced #logo {
-  display: block;
-  float: left;
   width: 206px;
   height: 470px;
   background-image: url(../images/divaf.png);
