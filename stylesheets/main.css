@@ -5,10 +5,6 @@ body {
   font-size: 12px;
 }
 
-html.enhanced body {
-  min-width: 880px;
-}
-
 em {
   color: red;
   font-weight: bold;
@@ -27,33 +23,14 @@ h2:after {
   content: ":";
 }
 
-#enhancementToggle {
-  position: absolute;
-  top: 5px;
-  left: 5%;
-}
-
 #logo {
   float: left;
-  width: 204px;
-  height: 225px;
-  background-image: url(../images/divaf_small.png);
-}
-
-html.enhanced #logo {
-  width: 206px;
-  height: 470px;
-  background-image: url(../images/divaf.png);
 }
 
 #menu {
   list-style: none;
   padding: 0;
   margin: 3em 0 3em 0;
-}
-
-html.enhanced #menu {
-  margin-left: 200px;
 }
 
 #menu li {
@@ -64,13 +41,5 @@ html.enhanced #menu {
 
 #menu li:first-child {
   border-left: 1px solid black;
-}
-
-html.enhanced #main {
-  background-image: url(../images/globe.gif);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: scroll;
-  min-height: 800px;
 }
 

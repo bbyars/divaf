@@ -1,41 +1,47 @@
-dl {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-dt {
-  padding-top: 2em;
-}
-
-dd {
-  margin-left: 2em;
-  padding-top: 2px;
-}
-
 h3 {
-  margin-bottom: 0;
-  margin-left: 220px;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: underline;
 }
 
-#main dl {
-  margin-left: 25%;
+ul {
+  padding: 0;
 }
 
-#pdc span.companyName {
+li {
+  list-style-type: none;
+}
+
+#header {
+  text-align: center;
+}
+
+#keyMembers, #technicalSupport, #participatingOrganizations {
+  clear: both;
+}
+
+#keyMembers ul {
+  float: left;
+  margin-left: 5em;
+}
+
+#pdcllc {
   color: gray;
   font-weight: bold;
   font-style: italic;
   margin-left: 1em;
 }
 
-dd.company {
-  margin-top: 2em;
+#participatingOrganizations div {
+  clear: both;
 }
 
-dd.company a[rel="website"] {
-  margin-left: 1em;
-}
-
-dd.company a[rel="email"] {
+#participatingOrganizations img {
+  clear: left;
   display: block;
 }
+
+#participatingOrganizations ul {
+  float: left;
+}
+
