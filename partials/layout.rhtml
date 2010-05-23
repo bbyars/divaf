@@ -3,18 +3,17 @@
   <head>
     <title>Divaf - <%= @page_title %></title>
 
-    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
-    <%= (@css || []).map { |filename| css(filename) } %>
+    <%= ((@css || []) << "main.css").collect { |filename| css(filename) }.join("\n    ") %>
 
     <!--[if lt IE 8]>
-      <link href="stylesheets/ie.css" rel="stylesheet" type="text/css" />
+      <%= css "ie.css" %>
     <![endif]-->
     <!--[if lt IE 7]>
-      <script src="javascripts/ie7/ie9.js">IE7_PNG_SUFFIX=".png";</script>
+      <%= script "ie9.js", :inline => 'IE7_PNG_SUFFIX=".png";' %>
     <![endif]-->
   </head>
   <body>
-    <img id="logo" src="images/divaf_small.png" width="204" height="225" alt="Divaf" />
+    <%= img "divaf_small.png", :id => "logo", :width => 204, :height => 225, :alt => "Divaf" %>
 
     <div id="menu">
       <ul>

@@ -28,6 +28,28 @@ def process(template_path, compiled_extension, &block)
 end
 
 # Used for erb templates
-def css(filename)
-  '<link href="stylesheets/#{filename}.css" rel="stylesheet" type="text/css" />'
+TIMESTAMP = Time.now.strftime("%Y%m%d%H%M%S")
+
+def css(filename, options={})
+  options[:href] = "stylesheets/#{filename}?#{TIMESTAMP}"
+  options[:rel] = "stylesheet"
+  options[:type] = "text/css"
+  "<link #{attrs(options)} />"
 end
+
+def img(filename, options)
+  options[:src] = "images/#{filename}?#{TIMESTAMP}"
+  "<img #{attrs(options)} />"
+end
+
+def script(filename, options)
+  options[:src] = "javascripts/#{filename}?#{TIMESTAMP}"
+  inline = options[:inline] || ''
+  options.delete(:inline)
+  "<script #{attrs(options)}>#{inline}</script>"
+end
+
+def attrs(options)
+  options.collect { |key, value| %Q(#{key}="#{value}") }.join(" ")
+end
+
