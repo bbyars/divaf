@@ -6,7 +6,11 @@ task :default => [:compile]
 task :compile => [:compile_html, :compile_css]
 
 task :compile_html do
-  process("*.erb", ".html") { |erb| ERB.new(erb).result(binding) }
+  layout = File.open("partials/layout.rhtml", "r").read
+  process("*.rhtml", ".html") do |template|
+    content = ERB.new(template).result(binding)
+    ERB.new(layout).result(binding)
+  end
 end
 
 task :compile_css do
@@ -15,10 +19,15 @@ end
 
 def process(template_path, compiled_extension, &block)
   FileList[template_path].each do |filename|
-    compiled = yield(File.open(filename, 'r').read)
     old_extension = File.extname(filename)
     new_path = "public/" + filename.sub(/#{Regexp.quote(old_extension)}/, compiled_extension)
     puts "#{filename} => #{new_path}"
-    File.open(new_path, 'w') {|f| f.write(compiled)}
+    compiled = yield(File.open(filename, 'r').read)
+    File.open(new_path, 'w') { |f| f.write(compiled) }
   end
+end
+
+# Used for erb templates
+def css(filename)
+  '<link href="stylesheets/#{filename}.css" rel="stylesheet" type="text/css" />'
 end

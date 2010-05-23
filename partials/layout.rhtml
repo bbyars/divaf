@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Divaf - <%= @page_title %></title>
+
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <%= (@css || []).map { |filename| css(filename) } %>
+
+    <!--[if lt IE 8]>
+      <link href="stylesheets/ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lt IE 7]>
+      <script src="javascripts/ie7/ie9.js">IE7_PNG_SUFFIX=".png";</script>
+    <![endif]-->
+  </head>
+  <body>
+    <img id="logo" src="images/divaf_small.png" width="204" height="225" alt="Divaf" />
+
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vaccine.html">Vaccine Storage</a></li>
+        <li>Breast Cancer Awareness</li>
+        <li>HIV/AIDS Awareness</li>
+        <li>Donors</li>
+        <li>Current Activities</li>
+        <li><a href="contact.html">Contact Information</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <%= content %>
+    </div>
+  </body>
+</html>
+
