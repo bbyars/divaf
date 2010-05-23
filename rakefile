@@ -1,0 +1,24 @@
+require 'less' # sudo gem install less
+require 'erb'
+
+task :default => [:compile]
+
+task :compile => [:compile_html, :compile_css]
+
+task :compile_html do
+  process("*.erb", ".html") { |erb| ERB.new(erb).result(binding) }
+end
+
+task :compile_css do
+  process("stylesheets/*.less", ".css") { |less| Less::Engine.new(less).to_css }
+end
+
+def process(template_path, compiled_extension, &block)
+  FileList[template_path].each do |filename|
+    compiled = yield(File.open(filename, 'r').read)
+    old_extension = File.extname(filename)
+    new_path = "public/" + filename.sub(/#{Regexp.quote(old_extension)}/, compiled_extension)
+    puts "#{filename} => #{new_path}"
+    File.open(new_path, 'w') {|f| f.write(compiled)}
+  end
+end

@@ -1,0 +1,28 @@
+body {
+  background-color: #c6d9f1;
+  margin: 0% 5%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+em {
+  color: red;
+  font-weight: bold;
+}
+h2, h3 {
+  text-transform: uppercase;
+  font: normal normal bold 12px Helvetica, Arial, sans-serif;
+}
+h2 { text-decoration: underline; }
+h2:after { content: ":"; }
+#logo { float: left; }
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 3em 0 3em 0;
+}
+#menu li {
+  display: inline;
+  border-right: 2px solid gray;
+  padding: 0 5px;
+}
+#menu li:first-child { border-left: 1px solid black; }

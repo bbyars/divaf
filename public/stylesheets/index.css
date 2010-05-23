@@ -1,0 +1,35 @@
+#focus li:after { content: ";"; }
+#divaf li:after { content: ";"; }
+#board li:after { content: ";"; }
+#focus li:last-child:after { content: "."; }
+#divaf li:last-child:after { content: "."; }
+#board li:last-child:after { content: "."; }
+#divaf li { font-weight: bold; }
+#board li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+#overview { text-align: center; }
+html.enhanced #overview { margin-left: 220px; }
+#mission, #objectives { margin: 20px 0 0 0; }
+html.enhanced #mission { margin-left: 210px; }
+html.enhanced #objectives { margin-left: 210px; }
+#focus, #divaf, #board { width: 55%; }
+#focus { clear: left; }
+.surname { text-transform: uppercase; }
+#hospital, #tents { display: none; }
+html.enhanced #hospital {
+  display: block;
+  float: right;
+  width: 299px;
+  height: 224px;
+  background-image: url(../images/hospital.jpg);
+}
+html.enhanced #tents {
+  display: block;
+  float: right;
+  margin-top: -100px;
+  width: 372px;
+  height: 279px;
+  background-image: url(../images/tents.jpg);
+}
