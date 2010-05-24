@@ -1,12 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
-    <title>Divaf - <%= @page_title %></title>
-
-    <%= ((@css || []) << 'main.css').collect { |filename| css(filename, :media => 'all') }.join("\n    ") %>
+    <title>Divaf - <%= page_title %></title>
 
     <%= css 'blueprint/screen.css', :media => 'screen, projection' %>
     <%= css 'blueprint/print.css', :media => 'print' %>
+    <%= (css_files << 'main.css').collect { |filename| css(filename, :media => 'all') }.join("\n    ") %>
 
     <!--[if lt IE 8]>
       <%= css 'blueprint/ie.css', :media => 'screen, projection' %>
@@ -21,17 +20,28 @@
     <div id="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="vaccine.html">Vaccine Storage</a></li>
-        <li>Breast Cancer Awareness</li>
-        <li>HIV/AIDS Awareness</li>
-        <li>Donors</li>
-        <li>Current Activities</li>
+        <li><a href="vaccine.html">Vaccine Distribution</a></li>
+        <li><a href="currentActivities.html">Current Activities</a></li>
+        <li><a href="photoWall.html">Photo Wall</a></li>
+        <li><a href="specialMention.html">Special Mention</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
         <li><a href="contact.html">Contact Information</a></li>
       </ul>
     </div>
 
-    <div id="content">
-      <%= content %>
+    <%= header %>
+
+    <div id="content" class="container clear">
+      <%= body %>
+    </div>
+
+    <div id="footer">
+      <ul>
+        <li>Investing in the future</li>
+        <li>For the children</li>
+        <li>For the community</li>
+        <li>For us</li>
+      </ul>
     </div>
   </body>
 </html>
