@@ -9,7 +9,7 @@ task :compile => [:compile_html, :compile_css] do
 end
 
 task :compile_html do
-  layout = File.open("templates/partials/layout.rhtml", "r").read
+  layout = File.open("partials/layout.rhtml", "r").read
   process("*.rhtml", ".html") do |template|
     content = ERB.new(template).result(binding)
     ERB.new(layout).result(binding)
