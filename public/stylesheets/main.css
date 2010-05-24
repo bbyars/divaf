@@ -13,15 +13,30 @@
 h4 { text-decoration: underline; }
 #leftCol h4 { clear: left; }
 #rightCol h4 { clear: right; }
-h4.down-1 { margin-top: 20px; }
-h4.down-2 { margin-top: 100px; }
-ul.simple {
+.down-1 { margin-top: 20px; }
+.down-2 { margin-top: 100px; }
+ul.semi {
   list-style: none;
   padding: 0;
 }
-ul.simple li { display: inline; }
-ul.simple li:after { content: ';'; }
-ul.simple li:last-child:after { content: '.'; }
+ul.semi li { display: inline; }
+ul.semi li:after { content: ';'; }
+ul.semi li:last-child:after { content: '.'; }
+ul.line {
+  list-style: none;
+  padding: 0;
+}
+ul.left {
+  float: left;
+  margin-left: 5em;
+}
+ul.comma {
+  list-style: none;
+  padding: 0;
+}
+ul.comma li { display: inline; }
+ul.comma li:after { content: ','; }
+ul.comma li:last-child:after { content: ''; }
 #footer ul {
   list-style: none;
   padding: 0;

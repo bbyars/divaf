@@ -30,15 +30,15 @@ h4 {
   clear: right;
 }
 
-h4.down-1 {
+.down-1 {
   margin-top: 20px;
 }
 
-h4.down-2 {
+.down-2 {
   margin-top: 100px;
 }
 
-ul.simple {
+ul.semi {
   list-style: none;
   padding: 0;
 
@@ -51,6 +51,33 @@ ul.simple {
 
     :last-child:after {
       content: '.';
+    }
+  }
+}
+
+ul.line {
+  list-style: none;
+  padding: 0;
+}
+
+ul.left {
+  float: left;
+  margin-left: 5em;
+}
+
+ul.comma {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline;
+
+    :after {
+      content: ',';
+    }
+
+    :last-child:after {
+      content: '';
     }
   }
 }

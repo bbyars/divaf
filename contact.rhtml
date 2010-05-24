@@ -1,36 +1,45 @@
 <% page_title = "Contact Information" %>
-<% css_files = ["contact"] %>
+<% css_files = ["contact.css"] %>
 
 <!-- HEADER -->
-<h3>Contact Information</h3>
+<div id="header">
+  <div id="contactInformation">
+    <h4>Contact Information</h4>
+    <br />
+    <ul class="line">
+      <li>General Inquiries</li>
+      <li><a rel="email" href="mailto:info@divaf.org">info@divaf.org</a></li>
+    </ul>
+  </div>
 
-<ul id="generalInquiries">
-  <li>General Inquiries</li>
-  <li><a rel="email" href="mailto:info@divaf.org">info@divaf.org</a></li>
-</ul>
-<!-- HEADER -->
-
-<div id="branches">
-  <h3>Branches</h3>
-  <p>Lagos State, Abuja, Sagamu (Ogun State), Ado-Ekiti (Ekiti State)</p>
+  <div id="branches">
+    <h4>Branches</h4>
+    <ul class="comma">
+      <li>Lagos State</li>
+      <li>Abuja</li>
+      <li>Sagamu (Ogun State)</li>
+      <li>Ado-Ekiti (Ekiti State)</li>
+    </ul>
+  </div>
 </div>
+<!-- HEADER -->
 
-<div id="keyMembers">
-  <ul>
+<div id="keyMembers" class="down-1">
+  <ul class="line left">
     <li class="name">Kemi Ailoje M.D.  B.Pharm, MBBS, M.Sc.</li>
     <li class="role">CEO/Founder</li>
     <li><a rel="email" href="mailto:dr.kemi.ailoje@divaf.org">dr.kemi.ailoje@divaf.org</a></li>
     <li>Phone Nigeria: +234 8033083580</li>
   </ul>
 
-  <ul>
+  <ul class="line left">
     <li class="name">Fola Tayo B.Pharm, PhD</li>
     <li class="role">Chairman Board of Directors</li>
     <li><a rel="email" href="mailto:prof.fola.tayo@divaf.org">prof.fola.tayo@divaf.org</a></li>
     <li>Phone Nigeria: +234 8033358444</li>
   </ul>
 
-  <ul>
+  <ul class="line left">
     <li class="name">Sunny John</li>
     <li class="role">Associate</li>
     <li><a rel="email" href="mailto:sunny.john@divaf.org">sunny.john@divaf.org</a></li>
@@ -39,11 +48,11 @@
   </ul>
 </div>
 
-<div id="technicalSupport">
-  <h3>Technical Support Group for Divaf Initiatives</h3>
-  <img width="40" height="22" src="images/pdc.png" alt="Project Development Consortium, LLC" />
+<div id="technicalSupport" class="span-12">
+  <h4>Technical Support Group for Divaf Initiatives</h4>
+  <%= img "pdc.png", :alt => "Project Development Consortium, LLC", :width => 40, :height => 22 %>
   <span id="pdcllc">Project Development Consortium LLC</span>
-  <ul>
+  <ul class="line">
     <li class="name">Bill Byars</li>
     <li class="role">Managing Partner</li>
     <li><a rel="email" href="mailto:bill.byars@pdcllc.net">bill.byars@pdcllc.net</a></li>
@@ -52,32 +61,32 @@
 </div>
 
 <div id="participatingOrganizations">
-  <h3>Participating Organizations in Project Development</h3>
+  <h4>Participating Organizations in Project Development</h4>
   <div id="sundanzer">
-    <img width="80" height="28" src="images/sundanzer.jpg" alt="SunDanzer" />
-    <ul>
+    <%= img "sundanzer.jpg", :alt => "SunDanzer", :width => 80, :height => 28 %>
+    <ul class="line">
       <li><a rel="website" href="www.sundanzer.com">www.sundanzer.com</a></li>
       <li><a rel="email" href="mailto:jim@sundanzer.com">jim@sundanzer.com</a></li>
     </ul>
   </div>
 
   <div id="solarisps">
-    <img width="80" height="28" src="images/solarisps.gif" alt="Solaris Power Systems" />
-    <ul>
+    <%= img "solarisps.gif", :alt => "Solaris Power Systems", :width => 80, :height => 28 %>
+    <ul class="line">
       <li><a rel="website" href="www.solarisps.com">www.solarisps.com</a></li>
       <li><a rel="email" href="mailto:scott.sims@solarisps.com">scott.sims@solarisps.com</a></li>
     </ul>
   </div>
 
   <div id="ryebrook_medical">
-    <img width="80" height="19" src="images/ryebrook_medical.jpg" alt="Ryebrooke Medical" />
-    <ul>
+    <%= img "ryebrook_medical.jpg", :alt => "Ryebrooke Medical", :width => 80, :height => 19 %>
+    <ul class="line">
       <li><a rel="email" href="mailto:s.hollingshead@rybrookemedical.co.nz">s.hollingshead@rybrookemedical.co.nz</a></li>
     </ul>
   </div>
 
   <div>
-    <ul>
+    <ul class="line">
       <li class="name">Brandon Byars</li>
       <li class="role">Software Developer</li>
       <li><a rel="email" href="mailto:bbyars@thoughtworks.com">bbyars@thoughtworks.com</a></li>
