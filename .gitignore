@@ -2,3 +2,4 @@
 *.swp
 *.swo
 public/*.html
+public/stylesheets/blueprint/
