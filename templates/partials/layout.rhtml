@@ -3,17 +3,20 @@
   <head>
     <title>Divaf - <%= @page_title %></title>
 
-    <%= ((@css || []) << "main.css").collect { |filename| css(filename) }.join("\n    ") %>
+    <%= ((@css || []) << 'main.css').collect { |filename| css(filename, :media => 'all') }.join("\n    ") %>
+
+    <%= css 'blueprint/screen.css', :media => 'screen, projection' %>
+    <%= css 'blueprint/print.css', :media => 'print' %>
 
     <!--[if lt IE 8]>
-      <%= css "ie.css" %>
+      <%= css 'blueprint/ie.css', :media => 'screen, projection' %>
     <![endif]-->
     <!--[if lt IE 7]>
-      <%= script "ie9.js", :inline => 'IE7_PNG_SUFFIX=".png";' %>
+      <%= script 'ie9.js', :inline => 'IE7_PNG_SUFFIX=".png";' %>
     <![endif]-->
   </head>
   <body>
-    <%= img "divaf_small.png", :id => "logo", :width => 204, :height => 225, :alt => "Divaf" %>
+    <%= img 'divaf_small.png', :id => 'logo', :width => 204, :height => 225, :alt => 'Divaf' %>
 
     <div id="menu">
       <ul>
