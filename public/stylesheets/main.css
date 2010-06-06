@@ -10,9 +10,17 @@
   padding: 0 5px;
 }
 #menu li:first-child { border-left: 1px solid black; }
-h4 { text-decoration: underline; }
-#leftCol h4 { clear: left; }
-#rightCol h4 { clear: right; }
+h1 { font-size: 1.4em; }
+h2 {
+  font-size: 1em;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 1em;
+  font-style: italic;
+}
+#leftCol h2 { clear: left; }
+#rightCol h2 { clear: right; }
 .down-1 { margin-top: 20px; }
 .down-2 { margin-top: 100px; }
 ul.semi {
@@ -50,3 +58,15 @@ ul.comma li:last-child:after { content: ''; }
 }
 #footer ul li:after { content: '....................'; }
 #footer ul li:last-child:after { content: ''; }
+.blue { color: #0066ff; }
+.name {
+  color: #404040;
+  font-style: italic;
+}
+div.image { float: left; }
+div.caption {
+  background-color: #f0d7b8;
+  text-align: center;
+  font-size: 0.8em;
+  margin: auto;
+}

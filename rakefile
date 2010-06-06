@@ -9,8 +9,7 @@ task :clean do
 end
 
 task :compile => [:compile_html, :compile_css] do
-  FileUtils.cp_r 'javascripts', 'public'
-  FileUtils.cp_r 'images', 'public'
+  %w(javascripts images documents).each { |dir| FileUtils.cp_r dir, 'public' }
 end
 
 task :compile_html do
@@ -57,6 +56,13 @@ def script(filename, options)
   inline = options[:inline] || ''
   options.delete(:inline)
   "<script #{attrs(options)}>#{inline}</script>"
+end
+
+def doc(filename, options={})
+  text = options[:text]
+  options.delete(:text)
+  options[:href] = "documents/#{filename}?#{TIMESTAMP}"
+  "<a #{attrs(options)}>#{text}</a>"
 end
 
 def attrs(options)
