@@ -29,6 +29,7 @@
   list-style-type: none;
   text-transform: none;
   margin: -10px;
+  border: 1px solid black;
 }
 #docs li {
   display: inline;
@@ -40,3 +41,7 @@ p.summary {
   color: red;
 }
 #model { clear: both; }
+#model h3 {
+  font-size: 1.2em;
+  text-align: center;
+}

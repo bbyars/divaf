@@ -85,3 +85,5 @@ div.caption ul {
   padding: 10px 0;
 }
 .emphasis { color: #0066ff; }
+.break { font-size: 0.8em; }
+.break img { float: right; }
