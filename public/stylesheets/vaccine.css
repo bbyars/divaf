@@ -9,3 +9,34 @@
   width: 500px;
   padding: 10px;
 }
+#details {
+  width: 55%;
+  height: 31em;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  float: left;
+}
+#solution {
+  height: 31em;
+  width: 30%;
+  float: left;
+  clear: right;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#docs {
+  background-color: white;
+  list-style-type: none;
+  text-transform: none;
+  margin: -10px;
+}
+#docs li {
+  display: inline;
+  margin-bottom: 0;
+}
+p.summary {
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+#model { clear: both; }
