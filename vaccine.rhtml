@@ -69,19 +69,6 @@
         <li class="emphasis">Depending on a change in environmental factors</li>
       </ul>
     </div>
-
-    <div id="docs">
-      <ul>
-        <li>
-          <%= img 'icons/pdf.jpeg', :height => 30, :width => 30, :alt => 'pdf' %>
-          <%= doc 'Sundanzer-Divaf-Vaccine-Unit.pdf', :text => 'Sundanzer Divaf Vaccine Unit.pdf' %>
-        </li>
-        <li>
-          <%= img 'icons/powerpoint.jpeg', :height => 30, :width => 30, :alt => 'PowerPoint' %>
-          <%= doc 'VACCINE-STORAGE-SOLUTIONS.pptx', :text => 'Vaccine Storage Solutions.pptx' %>
-        </li>
-      </ul>
-    </div>
   </div>
 
   <div id="model">
@@ -100,12 +87,23 @@
 
     <p>The distribution of the Model 2.1 is being conducted by <em>Divaf</em> who participated in the development with <em>SunDanzer</em> to provide solutions to vaccine storage in West Africa and beyond. <em>Divaf</em> is a humanitarian organization based in Lagos, Nigeria focused on health services for women and children. The eradication of many currently devastating diseases can be addressed through an effective vaccine storage appliance fully functional in the environments <em>Divaf</em> targets for their health services programs.</p>
 
-    <p class="break">Scott Hollingshead (Managing Director / Rybrooke Medical Limited located in Auckland and New Plymouth, New Zealand is acting as a distribution partner for the South Pacific area.
-    <%= img "hollingshead_family.jpg", :alt => 'Scott Hollingshead', :width => 100, :height => 80 %>
-    </p>
+  <div id="hollingshead">
+    <p>Scott Hollingshead (Managing Director / Rybrooke Medical Limited located in Auckland and New Plymouth, New Zealand is acting as a distribution partner for the South Pacific area.</p>
+    <%= img "hollingshead_family.jpg", :alt => 'Scott Hollingshead', :width => 125, :height => 90 %>
+    <span>Scott Hollingshead and family</span>
+    <ul class="line">
+      <li><a rel="email" href="mailto:s.hollingshead@rybrookemedical.co.nz">s.hollingshead@rybrookemedical.co.nz</a></li>
+      <li><%= img "ryebrook_medical.jpg", :alt => "Ryebrooke Medical", :width => 80, :height => 19 %></li>
+    </ul>
+  </div>
 
     <p>The development of this appliance satisfying all environmental criteria defined by <em>Divaf</em> for application has been a long and intensive process. The commitment of the <em>SunDanzer</em> organization to this goal, and the resources they have applied to achieve a solution is well above and beyond any reasonable expectation.</p>
 
     <p>These efforts by <em>SunDanzer</em> will now provide value to the <em>Divaf</em> initiatives in Nigeria, West Africa, and beyond; and provide a necessary tool for the prevention of childhood diseases which is a focus of <em>Divaf</em>.</p>
+  </div>
+
+  <div id="sundanzer_docs">
+    <%= img "sundanzer_pdf_front.jpg", :alt => "Sundanzer Divaf Vaccine Unit", :width => 336, :height => 364 %>
+    <%= img "sundanzer_pdf_back.jpg", :alt => "Sundanzer Divaf Vaccine Unit", :width => 336, :height => 364 %>
   </div>
 </div>

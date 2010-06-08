@@ -24,17 +24,6 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-#docs {
-  background-color: white;
-  list-style-type: none;
-  text-transform: none;
-  margin: -10px;
-  border: 1px solid black;
-}
-#docs li {
-  display: inline;
-  margin-bottom: 0;
-}
 p.summary {
   text-align: center;
   text-transform: uppercase;
@@ -45,3 +34,19 @@ p.summary {
   font-size: 1.2em;
   text-align: center;
 }
+#hollingshead {
+  font-size: 0.8em;
+  clear: both;
+  height: 90px;
+}
+#hollingshead img {
+  float: left;
+  margin: 0 10px;
+}
+#hollingshead p {
+  width: 40%;
+  float: left;
+}
+#hollingshead ul { float: right; }
+#hollingshead li { text-align: center; }
+#sundanzer_docs img { margin: 0 10%; }
