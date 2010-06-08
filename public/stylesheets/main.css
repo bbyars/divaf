@@ -1,4 +1,9 @@
-body { margin: 0 5%; }
+body {
+  margin: 0 5%;
+  background-color: #c6d9f1;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
 h1 { font-size: 1.4em; }
 h2 {
   font-size: 1em;
