@@ -11,10 +11,12 @@
 #principles {
   width: 70%;
   float: right;
-  border: 1px solid black;
+  border: 3px outset black;
   text-align: justify;
   padding: 1em;
 }
+#principles ul { float: left; }
+#principles img { float: left; }
 #children {
   float: left;
   margin: 120px 0 0 -150px;

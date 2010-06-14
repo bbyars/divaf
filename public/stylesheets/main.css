@@ -93,11 +93,17 @@ div.caption ul {
 .break { font-size: 0.8em; }
 .break img { float: right; }
 .quotation {
-  text-align: center;
-  margin-top: -10px;
+  text-align: right;
+  margin-top: -20px;
   margin-bottom: 10px;
 }
-.quotation .quote { font-size: 1.2em; }
+.quotation .quote { font-size: 1.5em; }
 .quotation .quote:before { content: '"'; }
 .quotation .quote:after { content: '"'; }
 .quotation .citation { font-size: 0.8em; }
+p.quote {
+  text-align: center;
+  font-style: italic;
+}
+p.quote:before { content: '"'; }
+p.quote:after { content: '"'; }
