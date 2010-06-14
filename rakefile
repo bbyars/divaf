@@ -39,6 +39,12 @@ end
 # Used for erb templates
 TIMESTAMP = Time.now.strftime("%Y%m%d%H%M%S")
 
+def favicon(filename, options={})
+  options[:rel] = "shortcut icon"
+  options[:href] = "images/#{filename}?#{TIMESTAMP}"
+  "<link #{attrs(options)}>"
+end
+
 def css(filename, options={})
   options[:href] = "stylesheets/#{filename}?#{TIMESTAMP}"
   options[:rel] = "stylesheet"
