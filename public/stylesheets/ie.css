@@ -1,9 +1,1 @@
-#logo { margin-top: 2em; }
-#main {
-  position: absolute;
-  left: 5%;
-  top: 200px;
-  width: 900px;
-}
-#main #technicalDesign { margin-top: 5em; }
-#main h3 { margin-left: 230px; }
+.quotation { margin-top: 0 !important; }

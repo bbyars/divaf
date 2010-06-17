@@ -8,6 +8,9 @@
     <%= (['main.css'] + css_files).collect { |filename| css(filename, :media => 'all') }.join("\n    ") %>
     <%= favicon 'divaf.ico' %>
 
+    <!--[if IE]>-
+      <%= css 'ie.css', :media => 'screen, projection' %>
+    <![endif]-->
     <!--[if lt IE 8]>
       <%= css 'blueprint/ie.css', :media => 'screen, projection' %>
     <![endif]-->

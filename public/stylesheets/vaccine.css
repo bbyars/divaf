@@ -17,12 +17,13 @@
   float: left;
 }
 #solution {
-  height: 31em;
+  height: 26em;
   width: 30%;
   float: left;
   clear: right;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 1.2em;
 }
 p.summary {
   text-align: center;
