@@ -87,7 +87,10 @@ div.caption ul {
   margin: auto;
   padding: 10px 0;
 }
-.emphasis { color: #0066ff; }
+.emphasis {
+  color: #0066ff;
+  font-weight: bold;
+}
 .break { font-size: 0.8em; }
 .break img { float: right; }
 .quotation {
